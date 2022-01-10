@@ -139,11 +139,13 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # LOGIN_REDIRECT_URL = 'userview'
 # LOGOUT_REDIRECT_URL = 'homepage'
-STATIC_ROOT = BASE_DIR /'static'
-
+STATIC_ROOT = BASE_DIR /'static_cdn'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = BASE_DIR / 'media_cdn'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
