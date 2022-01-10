@@ -1,0 +1,1 @@
+web: gunicorn shadowtech.wsgi --log-file -
