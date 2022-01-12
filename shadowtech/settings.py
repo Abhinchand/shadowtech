@@ -17,6 +17,8 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -55,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_auto_logout.middleware.auto_logout',
 ]
 
 ROOT_URLCONF = 'shadowtech.urls'
@@ -71,6 +74,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                ##### for auto logout
+                'django_auto_logout.context_processors.auto_logout_client',
             ],
         },
     },
@@ -137,8 +143,8 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-# LOGIN_REDIRECT_URL = 'userview'
-# LOGOUT_REDIRECT_URL = 'homepage'
+LOGIN_REDIRECT_URL = 'HomePage'
+LOGOUT_REDIRECT_URL = 'HomePage'
 STATIC_ROOT = BASE_DIR /'static_cdn'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
@@ -161,3 +167,19 @@ MEDIA_ROOT = BASE_DIR / 'media_cdn'
 # EMAIL_HOST_PASSWORD = 'Abhinchand123#'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+#
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+# SESSION_COOKIE_AGE = 1 * 6 #
+#
+
+
+# SESSION_EXPIRE_SECONDS = 6  # 5 min
+# SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
+# SESSION_TIMEOUT_REDIRECT = '/accounts/logout/'
+
+from datetime import timedelta
+AUTO_LOGOUT = {
+    'IDLE_TIME': 600,##for 10minutes
+    'REDIRECT_TO_LOGIN_IMMEDIATELY': True,
+    'MESSAGE': 'The session has expired. Please login again to continue.',
+}
