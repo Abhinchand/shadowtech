@@ -19,4 +19,5 @@ from .views import *
 urlpatterns = [
     path('',HomePage,name='HomePage'),
     path('about_me',about_me,name='about_me'),
+    path('dashboard',dashboard,name='dashboard'),
 ]
