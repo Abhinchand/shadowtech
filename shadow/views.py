@@ -10,3 +10,5 @@ def HomePage(request):
 def about_me(request):
     return render(request, 'main/About_Me.html')
 
+def portfolio(request):
+    return render(request,'')
