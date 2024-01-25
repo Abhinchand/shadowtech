@@ -14,21 +14,25 @@ def HomePage(request):
             email = request.POST['contact-email']
             subject = request.POST['subject']
             msg = request.POST['contact-message']
+            print('submit')
             print(len(phone))
+            print(phone)
+
+
             if len(phone) >11:
                 account_sid = 'AC3adeba580965764c56c76a3a08b10dc3'
-                auth_token = 'c5a6daf9eb9d8cacf18bd3243b452355'
+                auth_token = '8cf11f4279f9b09e293b349ceed17e05'
                 client = Client(account_sid, auth_token)
 
                 body = f'Hi {name} \n Your contact request has been received with message -  \n Subject -{subject} \n Message - {msg} \n Thank You'
-                # message = client.messages.create(
-                #     body=body,
-                #     from_='+15188325100',
-                #     to='+919746814920'
-                # )
+                message = client.messages.create(
+                    body=body,
+                    from_='+15188325100',
+                    to=phone
+                )
                 print(body)
-        except:
-            print('failed')
+        except Exception as e:
+            print('failed',e)
 
 
 
