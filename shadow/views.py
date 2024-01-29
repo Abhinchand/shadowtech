@@ -8,8 +8,10 @@ from django.core.cache import cache
 logging.basicConfig(filename='logfile.log', encoding='utf-8', level=logging.DEBUG)
 def HomePage(request):
     if request.method == 'POST':
+        logging.warning('Job started to send message ')
         cache.clear()
         try:
+            logging.warning('Try block')
             name = request.POST['contact-name']
             phone = request.POST['contact-phone']
             email = request.POST['contact-email']
@@ -20,6 +22,7 @@ def HomePage(request):
             # print(phone)
 
             if len(phone) >11:
+                logging.warning('valid ph number')
                 account_sid = 'AC3adeba580965764c56c76a3a08b10dc3'
                 auth_token = '8cf11f4279f9b09e293b349ceed17e05'
                 client = Client(account_sid, auth_token)
@@ -30,7 +33,8 @@ def HomePage(request):
                     from_='+15188325100',
                     to=phone
                 )
-                print(body)
+                # print(body)
+                logging.warning(body)
         except Exception as e:
             # print('failed',e)
             logging.warning('ERROR '+ str(e))
