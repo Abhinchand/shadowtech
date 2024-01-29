@@ -18,7 +18,6 @@ def HomePage(request):
             # print('submit')
             # print(len(phone))
             # print(phone)
-            a = b+a
 
             if len(phone) >11:
                 account_sid = 'AC3adeba580965764c56c76a3a08b10dc3'

@@ -6,3 +6,4 @@ WARNING:root:ERRORname 'b' is not defined
 WARNING:django.request:Not Found: /external.html
 WARNING:django.request:Not Found: /external.html
 INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
