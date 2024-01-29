@@ -1,10 +1,11 @@
 from django.shortcuts import render
 import os
 from twilio.rest import Client
+import logging
 # Create your views here.
 from django.core.cache import cache
 ############# home page ###########
-
+logging.basicConfig(filename='logfile.log', encoding='utf-8', level=logging.DEBUG)
 def HomePage(request):
     if request.method == 'POST':
         cache.clear()
@@ -17,7 +18,7 @@ def HomePage(request):
             # print('submit')
             # print(len(phone))
             # print(phone)
-
+            a = b+a
 
             if len(phone) >11:
                 account_sid = 'AC3adeba580965764c56c76a3a08b10dc3'
@@ -32,7 +33,8 @@ def HomePage(request):
                 )
                 print(body)
         except Exception as e:
-            print('failed',e)
+            # print('failed',e)
+            logging.warning('ERROR '+ str(e))
 
 
 
