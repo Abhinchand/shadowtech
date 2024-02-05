@@ -1,0 +1,91 @@
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 534.596289s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.952809s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.952809s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 593.248738s until idle ends.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.931516s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.928571s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\forms.py changed, reloading.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 226.148652s until idle ends.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.91141s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.90841s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 559.884364s until idle ends.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:root:ERROR 'name'
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.945621s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.942526s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 593.604563s until idle ends.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:root:ERROR 'name'
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.962884s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.961888s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 567.109379s until idle ends.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:root:ERROR 'name'
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.946845s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.946845s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: -1.694756s until idle ends.
+DEBUG:django_auto_logout.middleware:Logout user abhin
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:root:ERROR 'name'
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:root:ERROR 'name'
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 600.0s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 597.994486s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.946021s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 597.472742s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.971949s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 598.120409s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 594.492556s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 592.384716s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.957951s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.956929s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 546.644193s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.928115s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.928115s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 578.471017s until idle ends.
+WARNING:root:Job started to send message 
+WARNING:root:Try block
+WARNING:root:ERROR 'Message_form' object has no attribute 'name'
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.938354s until idle ends.
+DEBUG:django_auto_logout.middleware:Check IDLE_TIME: 599.932455s until idle ends.
+WARNING:django.request:Not Found: /external.html
+WARNING:django.request:Not Found: /external.html
+INFO:django.utils.autoreload:D:\code\shadowtech\shadow\views.py changed, reloading.
