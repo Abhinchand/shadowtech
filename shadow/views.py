@@ -65,3 +65,6 @@ def portfolio(request):
 
 def google_site_verf(request):
     return render(request, 'main/google895d8fb8741a4b5c.html')
+
+def robo_file(request):
+    return render(request, 'main/robots.txt')

@@ -19,5 +19,6 @@ from .views import *
 urlpatterns = [
     path('',HomePage,name='HomePage'),
     path('about_me',about_me,name='about_me'),
-    path('google895d8fb8741a4b5c.html',google_site_verf,name='google_site_verf')
+    path('google895d8fb8741a4b5c.html',google_site_verf,name='google_site_verf'),
+    path('robots.txt',robo_file,name='robo_file')
 ]
