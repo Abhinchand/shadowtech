@@ -1,14 +1,34 @@
-from django.shortcuts import render
+from django.contrib import messages
+from django.shortcuts import render, redirect, get_object_or_404
 import os
 from twilio.rest import Client
 import logging
 # Create your views here.
 from django.core.cache import cache
 from .forms import *
+from django.contrib.auth.decorators import login_required
 ############# home page ###########
 
 
+@login_required()
+def admin_page(request):
+    data = Message.objects.all()
+    context ={
+        'message_data':data
+    }
+    return render(request,'admin/admin_home.html',context)
 
+def read_message(request,id=None):
+    instance = get_object_or_404(Message, id=id)
+    instance.status=True
+    instance.save()
+
+    return redirect('admin_page')
+def delete_message(request,id=None):
+    instance = get_object_or_404(Message, id=id)
+    instance.delete()
+
+    return redirect('admin_page')
 
 def HomePage(request):
     if request.method == 'POST':
@@ -55,6 +75,10 @@ def HomePage(request):
         file1.close()
 
     return render(request, 'main/index.html')
+
+
+
+
 
 ###########  about me #############
 def about_me(request):

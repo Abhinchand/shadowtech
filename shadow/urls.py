@@ -19,6 +19,14 @@ from .views import *
 urlpatterns = [
     path('',HomePage,name='HomePage'),
     path('about_me',about_me,name='about_me'),
+    path('admin_page',admin_page,name='admin_page'),
+    path('admin_page',admin_page,name='admin_page'),
+    path('delete_message/<int:id>/',delete_message,name='delete_message'),
+    path('read_message/<int:id>/',read_message,name='read_message'),
+
+
+
     path('google895d8fb8741a4b5c.html',google_site_verf,name='google_site_verf'),
-    path('robots.txt',robo_file,name='robo_file')
+    path('robots.txt',robo_file,name='robo_file'),
+
 ]

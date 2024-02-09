@@ -14,6 +14,7 @@ class Message(models.Model):
     phone_no = models.IntegerField()
     subject = models.CharField(max_length=250)
     content = models.TextField()
+    status = models.BooleanField(default=False)
     update = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 
