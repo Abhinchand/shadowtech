@@ -20,7 +20,7 @@ urlpatterns = [
     path('',HomePage,name='HomePage'),
     path('about_me',about_me,name='about_me'),
     path('admin_page',admin_page,name='admin_page'),
-    path('admin_page',admin_page,name='admin_page'),
+    path('new_inbox',new_inbox,name='new_inbox'),
     path('delete_message/<int:id>/',delete_message,name='delete_message'),
     path('read_message/<int:id>/',read_message,name='read_message'),
 

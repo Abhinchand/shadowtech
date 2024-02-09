@@ -16,14 +16,25 @@ def admin_page(request):
     context ={
         'message_data':data
     }
-    return render(request,'admin/admin_home.html',context)
+    return render(request,'admin/inbox.html',context)
 
+@login_required()
+def new_inbox(request):
+    data = Message.objects.filter(status=False)
+    context ={
+        'message_data':data
+    }
+    return render(request,'admin/new_inbox.html',context)
+
+
+@login_required()
 def read_message(request,id=None):
     instance = get_object_or_404(Message, id=id)
     instance.status=True
     instance.save()
 
     return redirect('admin_page')
+@login_required()
 def delete_message(request,id=None):
     instance = get_object_or_404(Message, id=id)
     instance.delete()

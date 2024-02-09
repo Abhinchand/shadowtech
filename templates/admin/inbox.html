@@ -1,0 +1,47 @@
+{% extends 'admin/admin_home.html' %}
+{% block content %}
+<div id="home" class="rn-slider-area">
+    <div class="slide slider-style-1">
+        <div class="container">
+            <table class="table table-striped table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">content</th>
+                    <th scope="col">Action</th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for msg in message_data %}
+                    <tr>
+                        <th scope="row">
+                            {% if not msg.status %}
+                                <i class="fa-solid fa-circle-dot">
+                            {% endif %}
+                            </i>{{ forloop.counter }} </th>
+                        <td>{{ msg.name }}</td>
+                        <td>{{ msg.email }}</td>
+                        <td>{{ msg.phone_no }}</td>
+                        <td>{{ msg.subject }}</td>
+                        <td>{{ msg.content }}</td>
+                        <td align="center"><a href="{% url 'delete_message' id=msg.id %}"><i
+                                class="fa-solid fa-trash"></i></a>
+                            <a href="{% url 'read_message' id=msg.id %}"><i class="fa-sharp fa-solid fa-eye-slash"></i></a>
+                        </td>
+
+
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
