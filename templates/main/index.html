@@ -38,7 +38,8 @@
         <div class="col-lg-2 col-6">
             <div class="header-left">
                 <div class="logo">
-                    <a href=" {% url 'login' %} ">
+{#                    <a href=" {% url 'login' %} ">#}
+                    <a href="{{ ROOT_URL }}{% url 'login' %}">
                         <img src=" {% static 'assets/images/logo/logo.png' %} " alt="logo" width="50">
                     </a>
                 </div>

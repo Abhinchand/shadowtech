@@ -8,7 +8,8 @@ from django.core.cache import cache
 from .forms import *
 from django.contrib.auth.decorators import login_required
 ############# home page ###########
-
+from shadowtech import settings
+ROOT_URL = settings.ROOT_URL
 
 @login_required()
 def admin_page(request):
@@ -84,8 +85,11 @@ def HomePage(request):
 
         # Closing file
         file1.close()
+    context = {
+        'ROOT_URL': ROOT_URL
+    }
 
-    return render(request, 'main/index.html')
+    return render(request, 'main/index.html',context)
 
 
 
